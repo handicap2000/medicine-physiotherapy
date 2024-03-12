@@ -1,0 +1,27 @@
+server:
+  port: 48090
+  ip: *.*.*.*
+spring:
+  devtools:
+    restart:
+      additional-exclude: static/**.config/application.yml
+  mvc:
+    static-path-pattern: /**
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:53306/minipro?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: '******'
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+# 上传图片保存位置
+img:
+  request-path: /**
+  local-path: ./minipro/img
+
+page:
+  size: 100
