@@ -11,16 +11,19 @@
 
 ### 主要技术
 
-
+* `原生小程序 +Spring boot + JPA` ： 实现基于 `RESTful` 的前后端分离架构。
+* `Lombok` ： 减少了冗余的 Getter / Setter 代码。
 
 ### 软件界面
 
 #### 小程序
 
-![](doc/6.jpg)
+![](doc/1.jpg)
+
+![](doc/2.jpg)
 
 
 
 #### 程序功能
 
-![](doc/7.jpg)
+![](doc/3.jpg)
