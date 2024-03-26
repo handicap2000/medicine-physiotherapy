@@ -1,0 +1,30 @@
+server:
+  port: 48090
+  ip: 127.0.0.1
+spring:
+  devtools:
+    restart:
+      additional-exclude: static/**.config/application.yml
+  mvc:
+    static-path-pattern: /**
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/minipro?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf8
+#    url: 
+#    url: jdbc:log4jdbc:mysql://localhost:3306/minipro?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: '******'
+  jpa:
+#    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+# 上传图片保存位置
+img:
+  request-path: /**
+  local-path: d:/tmp/img
+
+page:
+  size: 100
